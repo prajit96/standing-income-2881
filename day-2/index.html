@@ -9,6 +9,167 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
+
+    <div class="burger" id="burgerid">
+        <div>
+            <div class="burgerhead">
+                <div class="bug1">
+                    <div class="bug1list pointer" id="openside"
+                        onclick ="document.getElementById('burgerid').style.display='none'">
+                        <span class="material-icons">
+                            menu
+                        </span>
+                    </div>
+                </div>
+                <div class="bug2">
+                    <a href="mainPage.html"><img src="https://assets.interntheory.com/creative/logo.png" alt=""></a>
+                </div>
+            </div>
+            <div>
+                <a href="mainPage.html">
+                    <div>
+                        <span class="material-icons">
+                            home 
+                        </span>
+                    </div>
+                    <div class="burgerheaddiv">
+                        Home 
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="intership.html">
+                    <div>
+                        <span class="material-icons">
+                            view_list 
+                        </span>
+                    </div>
+                    <div class="burgerheaddiv">
+                        Internships 
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="jobs.html">
+                    <div>
+                        <span class="material-icons">
+                            work 
+                        </span>
+                    </div>
+                    <div class="burgerheaddiv">
+                        Jobs 
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="company_register.html">
+                    <div>
+                        <span class="material-icons">
+                            playlist_add 
+                        </span>
+                    </div>
+                    <div class="burgerheaddiv">
+                        Post Internships 
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="online_courses.html">
+                    <div>
+                        <span class="material-icons">
+                            class 
+                        </span>
+                    </div>
+                    <div class="burgerheaddiv">
+                        Courses 
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="contact.html">
+                    <div>
+                        <span class="material-icons">
+                            call 
+                        </span>
+                    </div>
+                    <div class="burgerheaddiv">
+                        Contact Us 
+                    </div>
+                </a>
+            </div>
+            <hr>
+            <div onclick="togglrRegister()">
+                <a>
+                    <div>
+                        <span class="material-icons">
+                            subject 
+                        </span>
+                    </div>
+                    <div class="burgerheaddiv">
+                        Register 
+                    </div>
+                </a>
+            </div>
+            <div onclick="toggleLogin()">
+                <a>
+                    <div>
+                        <span class="material-icons">
+                            meeting_room 
+                        </span>
+                    </div>
+                    <div class="burgerheaddiv">
+                        Login 
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="header" id="Myheader">
+        <div>
+            <div class="bug1">
+                <div class="bug1list pointer" onclick="document.getElementById('burgerid').style.display='block'">
+                    <span class="material-icons">
+                        menu
+                    </span>
+
+                </div>
+            </div>
+            <div class="bug2">
+                <a href="mainPage.html"><img src="https://assets.interntheory.com/creative/logo.png" alt=""></a>
+            </div>
+            <div class="bug3"></div>
+            <div class="bug4">
+                <div id="shopcart" class="point">
+                    <div>
+                        <div id="cartname">1</div>
+                    </div>
+                    <span class="material-icons">
+                        shopping_cart
+                    </span>
+                </div>
+                <div class="signin">
+                    <div>
+                        <div id="imgsignin" class="" >SIGN IN</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <div class="midcontainer" id="cont1">
         <div class="part1">
             <div>
@@ -276,17 +437,30 @@
     </div>
     
 </body>
-
-
-
-
-
-
-
-
-
-
 </html>
+<script>
+    var i = 0;
+    slideshow(1);
+    function slideshow(t){
+        var div = [];
+        div[0] = document.getElementById('slide01');
+        div[1] = document.getElementById('slide02');
+        div[2] = document.getElementById('slide03');
+        div[3] = document.getElementById('slide04');
+
+        for(var j=0;j<div.length;j++){
+            div[j].style.display = "none";
+        }
+        i = i+t;
+        if(i>div.length) i=1;
+        if(i==0) i=4;
+        div[i-1].style.display="block";
+    }
+
+    setInterval(function (){
+        slideshow(1);
+    },4000);
+</script>
 <script src="../scripts/mainPage.js"></script>
 <script>src="../scripts/slideShow.js"</script>
 <script>src="..scripts/signedName.js"</script>

@@ -1,0 +1,6 @@
+#main{
+    display: flex;
+}
+#main > div img{
+    width: 30%;
+}
