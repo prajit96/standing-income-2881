@@ -15,7 +15,7 @@
 #try{
     display: flex;
     margin-top: 15px;
-    padding: 10px;
+    padding: 40px;
     position: relative;
 }
 #try > div img{
@@ -40,8 +40,7 @@
 }
 .ch3{
     margin-left: 50px;
-    border: 1px solid yellow;
-    
+    padding-right: 50px;
     position: absolute;
     right: 0;
 }
@@ -55,7 +54,9 @@
     color: rgb(80, 171, 245);
 }
 .midlast{
+    height: 70px;
     text-align: center;
+    color: rgb(80, 171, 245);
 }
 .border{
     box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
