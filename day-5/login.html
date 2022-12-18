@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <div style="border:1px solid red;" class="burger" id="burgerid">
+      
+        <div>
+            <div class="burgerhead">
+                <div class="bug1">
+                    <div class="bug1list pointer" id="openside">
+                        
+                        <span>
+                            <i onclick ="hidesidemenu()"  class="fa fa-align-justify" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="bug2">
+                    <a href="index.html"><img src="https://assets.interntheory.com/creative/logo.png" alt=""></a>
+                </div>
+            </div>
+            <div>
+                <a href="..\day-2\index.html">
+                    <div>
+                        <span>
+                            <i onclick ="showsidemenu()" class="fa fa-align-justify" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <div class="burgerheaddiv">
+                        Home 
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="..\day-3\internship.html">
+                    <div>
+                        <span class="material-icons">
+                            view_list 
+                        </span>
+                    </div>
+                    <div class="burgerheaddiv">
+                        Internships 
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="..\day-4\jobs.html">
+                    <div>
+                        <span class="material-icons">
+                            work 
+                        </span>
+                    </div>
+                    <div class="burgerheaddiv">
+                        Jobs 
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="">
+                    <div>
+                        <span class="material-icons">
+                            playlist_add 
+                        </span>
+                    </div>
+                    <div class="burgerheaddiv">
+                        Post Internships 
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="">
+                    <div>
+                        <span class="material-icons">
+                            class 
+                        </span>
+                    </div>
+                    <div class="burgerheaddiv">
+                        Courses 
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="..\day-4\contact.html">
+                    <div>
+                        <span class="material-icons">
+                            call 
+                        </span>
+                    </div>
+                    <div class="burgerheaddiv">
+                        Contact Us 
+                    </div>
+                </a>
+            </div>
+            <hr>
+            <div onclick="toggleRegister()">
+                <a>
+                    <div>
+                        <span class="material-icons">
+                            subject 
+                        </span>
+                    </div>
+                    <div class="burgerheaddiv">
+                        Register 
+                    </div>
+                </a>
+            </div>
+            <div onclick="toggleLogin()">
+                <a href="..\day-5\login.html">
+                    <div>
+                        <span class="material-icons">
+                            meeting_room 
+                        </span>
+                    </div>
+                    <div class="burgerheaddiv">
+                        Login 
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="header" id="Myheader">
+        <div>
+            <div class="bug1">
+                <div class="bug1list pointer" onclick="document.getElementById('burgerid').style.display='block'">
+                    <span class="material-icons">
+                      
+                        <!-- <i  class="fa fa-arrow-left" aria-hidden="true"></i> -->
+                        <i onclick ="showsidemenu()" class="fa fa-align-justify" aria-hidden="true"></i>
+                    </span>
+
+                </div>
+            </div>
+            <div class="bug2">
+                <a href="index.html"><img src="https://assets.interntheory.com/creative/logo.png" alt=""></a>
+            </div>
+            <div class="bug3"></div>
+            <div class="bug4">
+                <div id="shopcart" class="point">
+                    <div>
+                        <div id="cartname">1</div>
+                    </div>
+                    <span class="material-icons">
+                        shopping_cart
+                    </span>
+                </div>
+                <div class="signin">
+                    <div>
+                        <div  >
+                           <a id="imgsignin" href="..\day-5\login.html">SIGN IN</a> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content" id="con1">
+        <div id="exmple">
+            <div id="main">
+                <div class="main1">
+                    <div class="stucompany" style="clear: both;">
+                        <div class="s_btn" style="float: left;">
+                            <h2 id="studentbtn">STUDENT</h2>
+                        </div>
+                        <div class="c_btn" style="float: left;">
+                            <h2 id="companybtn">COMPANY</h2>
+                        </div>
+                    </div>
+                    <div class="first_blk" style="clear: both;">
+                        <h2>Login </h2>
+                    </div>
+                    <div class="secont_blk">
+                        <p>
+                            If you are a company looking to hire interns, please login as a company by clicking <a href="">here</a>
+                        </p>
+                    </div>
+                    <div id="studenttab">
+                
+                        <div class="third_blk" >
+                            <a href="https://www.facebook.com/login.php?skip_api_login=1&api_key=428399661061982&kid_directed_site=0&app_id=428399661061982&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fv3.0%2Fdialog%2Foauth%3Fclient_id%3D428399661061982%26redirect_uri%3Dhttps%253A%252F%252Finterntheory.com%252Fapi%252Ffacebook%252Fcallback%26scope%3Demail%26response_type%3Dcode%26state%3DZIi3Ii6HWMRa4v8etG5vXhLZG4LuJfouKgS9Uoor%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3D6d3459b6-7ed7-4b85-a3db-1c2465510bc7%26tp%3Dunspecified&cancel_url=https%3A%2F%2Finterntheory.com%2Fapi%2Ffacebook%2Fcallback%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3DZIi3Ii6HWMRa4v8etG5vXhLZG4LuJfouKgS9Uoor%23_%3D_&display=page&locale=hi_IN&pl_dbl=0" style="color: white; font-family: 'Roboto', sans-serif;"><img src="https://www.interntheory.com/assets/iconsLogos/facebook-circular-logo.svg" style="float: left; margin-left: 5%;margin-top: 1%; background-color: white;" height="20" ><div style="margin-top:1.4%; font-weight: 590; letter-spacing: 0.05em; font-size: 14px;font-family:'Roboto', sans-serif; width: 100%;">SIGNIN WITH FACEBOOK</div></a>
+                          </div>
+                         
+                          <div class="third_blk" >
+                            <a href="https://www.facebook.com/login.php?skip_api_login=1&api_key=428399661061982&kid_directed_site=0&app_id=428399661061982&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fv3.0%2Fdialog%2Foauth%3Fclient_id%3D428399661061982%26redirect_uri%3Dhttps%253A%252F%252Finterntheory.com%252Fapi%252Ffacebook%252Fcallback%26scope%3Demail%26response_type%3Dcode%26state%3DZIi3Ii6HWMRa4v8etG5vXhLZG4LuJfouKgS9Uoor%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3D6d3459b6-7ed7-4b85-a3db-1c2465510bc7%26tp%3Dunspecified&cancel_url=https%3A%2F%2Finterntheory.com%2Fapi%2Ffacebook%2Fcallback%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3DZIi3Ii6HWMRa4v8etG5vXhLZG4LuJfouKgS9Uoor%23_%3D_&display=page&locale=hi_IN&pl_dbl=0" style="color: white; font-family: 'Roboto', sans-serif;"><img src="https://www.interntheory.com/assets/iconsLogos/googlelogo.svg" style="float: left; margin-left: 5%;margin-top: 1%; background-color: white;" height="20" ><div style="margin-top:1.4%; font-weight: 590; letter-spacing: 0.05em; font-size: 14px;font-family:'Roboto', sans-serif; width: 100%">SIGNIN WITH GOOGLE</div></a>
+                          </div>
+                          </div>
+                      <div style="display: none;" id="companytab">
+                        <div class="third_blk" >
+                            <a href="https://www.facebook.com/login.php?skip_api_login=1&api_key=428399661061982&kid_directed_site=0&app_id=428399661061982&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fv3.0%2Fdialog%2Foauth%3Fclient_id%3D428399661061982%26redirect_uri%3Dhttps%253A%252F%252Finterntheory.com%252Fapi%252Ffacebook%252Fcallback%26scope%3Demail%26response_type%3Dcode%26state%3DZIi3Ii6HWMRa4v8etG5vXhLZG4LuJfouKgS9Uoor%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3D6d3459b6-7ed7-4b85-a3db-1c2465510bc7%26tp%3Dunspecified&cancel_url=https%3A%2F%2Finterntheory.com%2Fapi%2Ffacebook%2Fcallback%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3DZIi3Ii6HWMRa4v8etG5vXhLZG4LuJfouKgS9Uoor%23_%3D_&display=page&locale=hi_IN&pl_dbl=0" style="color: white; font-family: 'Roboto', sans-serif;"><img src="https://www.interntheory.com/assets/iconsLogos/linkedin.svg" style="float: left; margin-left: 5%;margin-top: 1%; background-color: white;" height="20" ><div style="margin-top:1.4%; font-weight: 590; letter-spacing: 0.05em; font-size: 14px;font-family:'Roboto', sans-serif; width: 100%;">SIGNIN WITH LINKEDIN</div></a>
+                          </div>
+                          </div>
+                        <div style="text-align: center;">
+                          <h6 style="color: rgb(160, 157, 157); font-family: 'Roboto', sans-serif; ; margin: 0 0 0 0;">OR</h6>
+                        </div>
+                    </div>
+                    <div class="form_buildblock">
+                      <form id="form">
+                          <div class="email" style="padding-left: 0;">
+                          <label for="email"> 
+                              <input autocomplete="off" id="email" type="text" placeholder="Email/Number" />
+                            </label>
+                            </div>
+                          <div class="password" style="padding-left: 0;">
+                          <label for="password">
+                              <input id="password" type="password" placeholder="Password"/>
+                            </label>
+                            </div>
+                          <div id = "wrong" style="display: none;">
+                            <p style="color: red; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; height: 15px; font-size: 12px;margin-left: 2%;">Wrong Password</p>
+                          </div>
+                          <div class="cr7" style="margin-left:3%;">
+                              <input type="checkbox" name="check" id="checkBox" />
+                              <label for="checkBox"><span> Remember Me</span>
+                            <a href="">Forgot Password?</a>
+                                </label>
+                          </div>
+                        <div>
+                          <div class="dhan" style="padding-left: 5%;">
+                            <span>Don't Have an account?</span>
+                            <a href="">Create Your account</a>
+                          </div>
+                        </div>
+                      </form>
+                      <div class="loginbutton">
+                        <input type="button" value="LOGIN" onclick="Login()" class="logindBtn">
+                    </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="bottomb1">
+            <div class="connect">
+                <div>
+                    <span class="material-icons">
+                        facebook
+                    </span>
+                </div>
+                <div>
+                    <span class="material-icons">
+                        facebook
+                    </span>
+                </div>
+                <div>
+                    <span class="material-icons">
+                        facebook
+                    </span>
+                </div>
+                <div>
+                    <span class="material-icons">
+                        facebook
+                    </span>
+                </div>
+            </div>
+            <div class="info">
+                <div>
+                    <div>BY PLACE</div>
+                    <hr>
+                    <div>Internships In Mumbai</div>
+                    <div>Internships In Delhi</div>
+                    <div>Internships In Bangalore</div>
+                    <div>Internships In Pune</div>
+                    <div>Internships In Hyderabad</div>
+                </div>
+                <div>
+                    <div>BY PROFILE</div>
+                    <hr>
+                    <div>Marketing Internships</div>
+                    <div>Business Development Internships</div>
+                    <div>Content Writing Interships</div>
+                    <div>Graphic Design Internships</div>
+                    <div>HR internships</div>
+                    <div>Engineering Internships</div>
+                </div>
+                <div>
+                    <div>BY TYPE</div>
+                    <hr>
+                    <div>Full Time Internships</div>
+                    <div>Part Time Internships</div>
+                    <div>Work From Home Internships</div>
+                </div>
+            </div>
+        </div>
+        <div class="bottomb2">
+            <div>REFUND & CANCELLATION POLICY</div>
+            <div>COURSES</div>
+            <div>TERMS AND CONDITIONS</div>
+            <div>PRIVACY POLICY</div>
+            <div>CONTACT US</div>
+            <div>ABOUT US</div>
+            <div>SITEMAP</div>
+        </div>
+        <hr>
+        <div class="bottomb3">
+            © 2015 - 2022 INTERNTHEORY. ALL RIGHTS RESERVED.
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    const student_btn=document.getElementById("studentbtn");
+    const company_btn=document.getElementById("companybtn");
+
+    function getstudentlogin(){
+        studenttab.style.display='block';
+        student_btn.style.color="#087CDD";
+        student_btn.style.borderBottom="1.8px solid #087CDD"
+    }
+    function getcompanylogin(){
+        companytab.style.display='block';
+        company_btn.style.color="#087CDD";
+        company_btn.style.borderBottom="1.8px solid #087CDD"
+    }
+    company_btn.addEventListener("click",function change(){
+        let studentTab=document.getElementById("studenttab");
+        let companyTab=document.getElementById("companytab");
+        studentTab.style.display="none"
+        companyTab.style.display="block"
+        company_btn.style.color="#087CDD"
+        student_btn.style.color=null
+        company_btn.style.borderBottom="1.8px solid #087CDD"
+        student_btn.style.borderBottom=null
+    })
+    student_btn.addEventListener("click",function change(){
+        let studentTab=document.getElementById("studenttab");
+        let companyTab=document.getElementById("companytab");
+        studentTab.style.display="block"
+        companyTab.style.display="none"
+        company_btn.style.color=null
+        student_btn.style.color="#087CDD"
+        company_btn.style.borderBottom=null
+        student_btn.style.borderBottom="1.8px solid #087CDD"
+    })
+
+    function Login(){
+        const form=document.getElementById("form");
+
+        const username=form.email.value
+        const password=form.password.value
+
+        const students=JSON.parse(localStorage.getItem("students")) || [];
+        const companies=JSON.parse(localStorage.getItem("companies")) || [];
+
+        for(let i=0;i<students.length;i++){
+            let us=students[i].email;
+            let ps=students[i].password;
+            if(us==username && ps==password){
+                window.location.href="index.html";
+            }
+        }
+        for(let i=0;i<companies.length;i++){
+            let uc=companies[i].email;
+            let pc=companies[i].password;
+            if(uc==username && pc==password){
+                window.location.href="index.html";
+            }else{
+                let wrong=document.getElementById("wrong")
+                wrong.style.display="block"
+                document.contact-form.reset();
+            }
+        }
+        let details={username,password}
+        students.push(details)
+        localStorage.setItem("students",JSON.stringify(students))
+        alert("Login Successful")
+        companies.push(details)
+        localStorage.setItem("companies",JSON.stringify(companies))
+        alert("Login Successful")
+    }
+
+    
+    let dox=document.getElementById('burgerid')
+    
+    function hidesidemenu(){
+        dox.style.left="-300px"
+    }
+    function showsidemenu(){
+        dox.style.left="0"
+    }
+
+</script>
