@@ -1,6 +1,146 @@
 .pointer{
     cursor: pointer;
 }
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header{
+    background: #555;
+    color: #f1f1f1;
+    height: 64px;
+    box-shadow: 0px 2px 2px -1px black;
+    background-color: white;
+}
+.header > div{
+    display: flex;
+    padding: 8px 24px 8px 24px;
+    height: 48px;
+}
+.header >div >div{
+    height: auto;
+}
+.bug1{
+    flex: 0 0 56px;
+}
+.bug2{
+    flex: 0 0 80px;
+}
+.bug2 img{
+    width: 100%;
+}
+.bug3{
+    flex-grow: 1;
+}
+.bug4{
+    display: flex;
+    flex: 0 0 192px;
+}
+.signin{
+    text-decoration: none;
+    
+}
+.signin >div{
+    margin-top: 5px;
+    padding: 10px;
+
+    padding-left: 12px;
+    background-color: red;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    font-weight: 500;
+}
+.signin >div:hover{
+    opacity: 0.7;
+}
+#shopcart,
+.bug1list{
+    width: 24px;
+    height: 24px;
+    padding: 12px;
+    color: black;
+    border-radius: 24px;
+}
+#shopcart{
+    padding: 0 12px 12px 12px ;
+}
+#shopcart > div{
+    height: 12px;
+    width: 24px;
+}
+#shopcart > div > div{
+    height: 16px;
+    width: 16px;
+    background-color: red;
+    z-index: 110;
+    border-radius: 16px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 12px;
+    padding: 2px;
+    display: none;
+}
+.bug1list:hover{
+    background-color: rgb(252, 247, 247);
+}
+#shopcart + div{
+    width: 84px;
+    height: 48px;
+}
+#burgerid{
+    top: 0;
+    left: -600px;
+   
+    z-index: 6;
+    width: 300px;
+    height: 750px;
+    position: fixed;
+    display: block;
+    border: 2px solid purple;
+}
+#burgerid>div{
+    width: 300px;
+    height: 750px;
+    background-color: white;
+    z-index: 100;
+    position: fixed;
+
+    box-shadow: 0px 3px 5px -1px rgb(5, 5, 5),
+    0px 5px 8px 0px rgb(0, 0, 0) , 0px 1px 14px 0px rgb(4, 4, 4)
+}
+.burgerhead{
+    display: flex;
+    padding: 8px 24px 8px 24px;
+}
+.burgerhead ~ div{
+    width: 100%;
+    height: 46px;
+    cursor: pointer;
+}
+.burgerhead ~ div:hover{
+    background-color: rgba(0 0 0 0.08);
+}
+.burgerhead ~div > a{
+    width: 100%;
+    height: 24px;
+    display: flex;
+    padding: 11px 16px 11px 16px;
+    text-decoration: none;
+    color: black;
+}
+.burgerhead ~ div > a > div{
+    padding-right: 32px;
+    display: flex;
+    align-items: center;
+}
+.burgerheaddiv{
+    font-size: 16px;
+    font-weight: 600;
+}
+.pointer{
+    cursor: pointer;
+}
 .fa{
     padding: 5px;
     font-size: 20px;
@@ -35,6 +175,7 @@
 .contact1{
     width: 100%;
     display: flex;
+    background: rgb(247, 242, 242);
     justify-content: center;
     padding: 10px;
 }

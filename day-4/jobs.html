@@ -5,14 +5,165 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="../css/styleHeadFoot.css" rel="stylesheet">
     <link href="../css/styleContent.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
         <link rel="stylesheet" href="jobs.css">
 
 
     <title>internship.html</title>
 </head>
 <body>
-    
+    <div style="border:1px solid red;" class="burger" id="burgerid">
+      
+        <div>
+            <div class="burgerhead">
+                <div class="bug1">
+                    <div class="bug1list pointer" id="openside">
+                        
+                        <span>
+                            <i onclick ="hidesidemenu()"  class="fa fa-align-justify" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="bug2">
+                    <a href="index.html"><img src="https://assets.interntheory.com/creative/logo.png" alt=""></a>
+                </div>
+            </div>
+            <div>
+                <a href="..\day-2\index.html">
+                    <div>
+                        <span>
+                            <i onclick ="showsidemenu()" class="fa fa-align-justify" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <div class="burgerheaddiv">
+                        Home 
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="..\day-3\internship.html">
+                    <div>
+                        <span class="material-icons">
+                            view_list 
+                        </span>
+                    </div>
+                    <div class="burgerheaddiv">
+                        Internships 
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="..\day-4\jobs.html">
+                    <div>
+                        <span class="material-icons">
+                            work 
+                        </span>
+                    </div>
+                    <div class="burgerheaddiv">
+                        Jobs 
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="">
+                    <div>
+                        <span class="material-icons">
+                            playlist_add 
+                        </span>
+                    </div>
+                    <div class="burgerheaddiv">
+                        Post Internships 
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="">
+                    <div>
+                        <span class="material-icons">
+                            class 
+                        </span>
+                    </div>
+                    <div class="burgerheaddiv">
+                        Courses 
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="..\day-4\contact.html">
+                    <div>
+                        <span class="material-icons">
+                            call 
+                        </span>
+                    </div>
+                    <div class="burgerheaddiv">
+                        Contact Us 
+                    </div>
+                </a>
+            </div>
+            <hr>
+            <div onclick="toggleRegister()">
+                <a>
+                    <div>
+                        <span class="material-icons">
+                            subject 
+                        </span>
+                    </div>
+                    <div class="burgerheaddiv">
+                        Register 
+                    </div>
+                </a>
+            </div>
+            <div onclick="toggleLogin()">
+                <a href="..\day-5\login.html">
+                    <div>
+                        <span class="material-icons">
+                            meeting_room 
+                        </span>
+                    </div>
+                    <div class="burgerheaddiv">
+                        Login 
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="header" id="Myheader">
+        <div>
+            <div class="bug1">
+                <div class="bug1list pointer" onclick="document.getElementById('burgerid').style.display='block'">
+                    <span class="material-icons">
+                      
+                        <!-- <i  class="fa fa-arrow-left" aria-hidden="true"></i> -->
+                        <i onclick ="showsidemenu()" class="fa fa-align-justify" aria-hidden="true"></i>
+                    </span>
+
+                </div>
+            </div>
+            <div class="bug2">
+                <a href="index.html"><img src="https://assets.interntheory.com/creative/logo.png" alt=""></a>
+            </div>
+            <div class="bug3"></div>
+            <div class="bug4">
+                <div id="shopcart" class="point">
+                    <div>
+                        <div id="cartname">1</div>
+                    </div>
+                    <span class="material-icons">
+                        shopping_cart
+                    </span>
+                </div>
+                <div class="signin">
+                    <div>
+                        <div  >
+                           <a id="imgsignin" href="..\day-5\login.html">SIGN IN</a> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="midcontainer" id="cont1">
         <div class="part1">
             <div>
@@ -47,7 +198,7 @@
             </div>
         </div>
     </div>
-    <hr>
+    
     <div id="main">
         <div><img src="https://assets.interntheory.com/creative/Internship_left_course_add_02.png" alt=""></div>
         <div id="second">
@@ -71,7 +222,7 @@
                     </div>
                     
                 </div>
-                <hr>
+                <hr class="dash">
                 <div id="try">
                     <div class="ch"><img src="https://assets.interntheory.com/uploads/company/logos/80cb6be36ae3e043c81fb0270d75f12f1ccfe008.jpg" alt=""></div>
                     <div class="ch2">
@@ -88,7 +239,7 @@
                     </div>
                     
                 </div>
-                <hr>
+                <hr class="dash">
                 <div id="try">
                     <div class="ch"><img src="https://assets.interntheory.com/uploads/company/logos/bf3174743fe71c1e3028caabc90044f486d5bc7b.jpg" alt=""></div>
                     <div class="ch2">
@@ -104,7 +255,7 @@
                         <h4>VIEW AND APPLY</h4>
                     </div>
                 </div>
-                <hr>
+                <hr class="dash">
                 <div id="try">
                     <div class="ch"><img src="https://assets.interntheory.com/uploads/company/logos/bf3174743fe71c1e3028caabc90044f486d5bc7b.jpg" alt=""></div>
                     <div class="ch2">
@@ -121,7 +272,7 @@
                         <h4>VIEW AND APPLY</h4>
                     </div>
                 </div>
-                <hr>
+                <hr class="dash">
                 <div id="try">
                     <div class="ch"><img src="https://assets.interntheory.com/uploads/company/logos/5e4aa4f62ecc23200708c5cf0d542f7ee1345362.jpg" alt=""></div>
                     <div class="ch2">
@@ -137,7 +288,7 @@
                         <h4>VIEW AND APPLY</h4>
                     </div>
                 </div>
-                <hr>
+                <hr class="dash">
                 <div id="try">
                     <div class="ch"><img src="https://assets.interntheory.com/uploads/company/logos/0b27fd3c3939c9f43653b65a93cfc9fb85b9095d.jpg" alt=""></div>
                     <div class="ch2">
@@ -154,7 +305,7 @@
                         <h4>VIEW AND APPLY</h4>
                     </div>
                 </div>
-                <hr>
+                <hr class="dash">
                 <div class="midlast">End of search results.</div>
             </div>
         </div>
@@ -236,9 +387,15 @@
 </body>
 </html>
 
-<script src="../scripts/mainPage.js"></script>
-<script>src="../scripts/slideShow.js"</script>
-<script>src="..scripts/signedName.js"</script>
-<script>src="scripts/sideTab.js"</script>
+<script>
+    let dox=document.getElementById('burgerid')
+    
+    function hidesidemenu(){
+        dox.style.left="-300px"
+    }
+    function showsidemenu(){
+        dox.style.left="0"
+    }
+</script>
 
 
